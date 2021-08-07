@@ -1,0 +1,10 @@
+.col-lg-6 {
+    padding: 4rem;
+}
+.vaithayna {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+}

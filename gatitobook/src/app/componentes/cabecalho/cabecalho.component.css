@@ -1,0 +1,11 @@
+.bg-custom {
+  background:#000;
+}
+a {
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+  color: #dcdcdc!important;
+
+}
