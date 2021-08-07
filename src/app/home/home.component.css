@@ -1,0 +1,19 @@
+.col-lg-6 {
+    padding: 5rem 4rem;
+}
+.vaithayna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    min-height:505px;
+}
+.bg-light {
+    background-color: #fff!important;
+    border-radius: 6px 0 0 6px;
+}
+.bg-custom {
+    background-color: #ffe9dd!important;
+    box-shadow: 2px 2px 15px 2px #c8bcb6;
+    border-radius: 0 6px 6px 0;
+}
