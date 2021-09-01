@@ -3,9 +3,16 @@
     <a [routerLink]="['']" class="navbar-brand text-white">GatitoBook</a>
     <div *ngIf="user$ | async as user">
       <div *ngIf="user.name; else login">
-        <i class="fa fa-user-circle mr-1 text-white"> </i>
-        <a class="mr-1 text-white text-capitalize">{{ user.name }}</a>
-        <a (click)="logout()" class="text-white">Logout</a>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user-circle mr-1 text-white"> </i>
+              {{user.name}}
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a (click)="logout()" class="text-white dropdown-item">Logout</a>
+          </div>
+          <a (click)="logout()" class="text-white dropdown-item">Logout</a>
+        </div>
       </div>
     </div>
   </nav>
