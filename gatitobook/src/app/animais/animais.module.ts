@@ -8,8 +8,9 @@ import { CartaoModule } from '../componentes/cartao/cartao.module';
 import { GradeFotosAnimaisComponent } from './grade-fotos-animais/grade-fotos-animais.component';
 import { CabecalhoModule } from '../componentes/cabecalho/cabecalho.module';
 import { RodapeModule } from '../componentes/rodape/rodape.module';
+import { DetalheAnimalComponent } from './detalhe-animal/detalhe-animal.component';
 @NgModule({
-  declarations: [ListaAnimaisComponent, AnimalComponent, GradeFotosAnimaisComponent],
+  declarations: [ListaAnimaisComponent, AnimalComponent, GradeFotosAnimaisComponent, DetalheAnimalComponent],
   imports: [CommonModule, AnimaisRoutingModule, CartaoModule, CabecalhoModule, RodapeModule ],
 })
 export class AnimaisModule {}

@@ -1,7 +1,5 @@
 <app-cabecalho></app-cabecalho>
-<div *ngIf="animais$ | async as animais">
+<div *ngIf="animais$ | async as animais" class="lista-animais">
     <app-grade-fotos-animais [animais]="animais"></app-grade-fotos-animais>
 </div>
 <app-rodape></app-rodape>
-
-  
