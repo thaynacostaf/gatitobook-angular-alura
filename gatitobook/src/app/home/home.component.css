@@ -1,12 +1,15 @@
+
 .col-lg-6 {
     padding: 5rem 4rem;
 }
-.div-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.container {
+    display: flex; 
+    justify-content:center; 
+    align-items:center;
     vertical-align: middle;
-    min-height:505px;
+    height: 42em;
+    background-color: #ffe9dd;
+    max-width: inherit;
 }
 .bg-light {
     background-color: #fff!important;
@@ -14,6 +17,8 @@
 }
 .bg-custom {
     background-color: #ffe9dd!important;
-    box-shadow: 2px 2px 15px 2px #c8bcb6;
     border-radius: 0 6px 6px 0;
+}
+.col-lg-6 {
+    box-shadow: 1px 1px 8px 1px #c8bcb6;
 }

@@ -3,15 +3,21 @@
     <a [routerLink]="['']" class="navbar-brand text-white">GatitoBook</a>
     <div *ngIf="user$ | async as user">
       <div *ngIf="user.name; else login">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-user-circle mr-1 text-white"> </i>
+        <div class="col-12">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fa fa-user-o" aria-hidden="true"></i>
               {{user.name}}
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a (click)="logout()" class="text-white dropdown-item">Logout</a>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a (click)="logout()" class="text-dark dropdown-item">Logout</a>
+            </div>
           </div>
-          <a (click)="logout()" class="text-white dropdown-item">Logout</a>
         </div>
       </div>
     </div>
